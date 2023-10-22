@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/main_menu_bottom_home"
+        android:title="홈"
+        android:icon="@drawable/image_home"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/main_menu_bottom_old_phone_function_setting"
+        android:title="기능 설정"
+        android:icon="@drawable/image_wrench"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/main_menu_bottom_new_phone_notification"
+        android:title="알림"
+        android:icon="@drawable/image_bell"
+        app:showAsAction="always"/>
+
+
+    <item android:id="@+id/main_menu_bottom_more"
+        android:title="더보기"
+        android:icon="@drawable/image_three_dots"
+        app:showAsAction="always"/>
+
+</menu>

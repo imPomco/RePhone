@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.SelectOldPhoneQRActivity">
+
+    <TextView
+        android:id="@+id/select_old_phone_device_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새 휴대전화와 페어링 진행"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="화면에 표시된 QR코드를 새 휴대전화에 인식시켜주세요."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_old_phone_device_textview" />
+
+    <ImageView
+        android:id="@+id/select_old_phone_image_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@id/select_old_phone_refresh_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_old_phone_device_textview" />
+
+    <TextView
+        android:id="@+id/select_old_phone_refresh_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60초 후 자동으로 새로고침돼요."
+        app:layout_constraintBottom_toTopOf="@+id/select_old_phone_refresh_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_old_phone_image_qr" />
+
+
+    <Button
+        android:id="@+id/select_old_phone_refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_normal_button"
+        android:text="새로고침"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_old_phone_image_qr" />
+
+    <TextView
+        android:id="@+id/select_old_phone_other_method_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="다른 방법으로 페어링 할래요"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_old_phone_refresh_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
