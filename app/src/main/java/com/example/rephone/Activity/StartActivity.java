@@ -71,6 +71,10 @@ public class StartActivity extends AppCompatActivity {
                 }
             } catch (Exception e) {
                 e.printStackTrace();
+                Toast.makeText(this, "서버에 연결하지 못했어요.", Toast.LENGTH_LONG).show();
+                finishAffinity();
+                System.runFinalization();
+                System.exit(0);
             }
         }
         return false;

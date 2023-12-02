@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NewPhoneNotificationFragment">
+
+    <TextView
+        android:id="@+id/notification_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="알림이 존재하지 않아요."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

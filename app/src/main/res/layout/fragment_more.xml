@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.MoreFragment">
+
+    <Button
+        android:id="@+id/more_reset_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="앱 초기화"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:background="@drawable/style_notification_background"/>
+
+
+</LinearLayout>

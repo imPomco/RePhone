@@ -28,9 +28,9 @@ public class IntroActivity extends AppIntro {
         setWizardMode(true);
         //setTransformer(AppIntroPageTransformerType.Fade.INSTANCE);
 
-        addSlide(AppIntroFragment.createInstance("환영합니다!", "RePhone은 쓰이지 않는 구형 휴대전화를 센서로 사용할 수 있도록 만들어주는 앱입니다.", 0, R.color.green));
-        addSlide(AppIntroFragment.createInstance("시작하기 전에..", "앱을 사용하려면 다음 권한이 필요합니다. (카메라, 저장소 읽기/쓰기, 마이크)", 0, R.color.orange));
-        addSlide(AppIntroFragment.createInstance("이제 시작해볼까요?", "완료를 눌러 다음으로 진행하세요.", 0,  R.color.blue));
+        addSlide(AppIntroFragment.createInstance("환영합니다!", "RePhone은 쓰이지 않는 구형 휴대전화를 센서로 사용할 수 있도록 만들어주는 앱입니다.", R.drawable.image_waving_hand, R.color.green));
+        addSlide(AppIntroFragment.createInstance("시작하기 전에..", "앱을 사용하려면 다음 권한이 필요합니다. (카메라, 저장소 읽기/쓰기, 마이크)", R.drawable.image_dot_phone, R.color.orange));
+        addSlide(AppIntroFragment.createInstance("이제 시작해볼까요?", "완료를 눌러 다음으로 진행하세요.", R.drawable.image_rocket, R.color.blue));
 
     }
 

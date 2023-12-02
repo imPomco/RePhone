@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563401570087",
+    "project_id": "rephone-1b3e2",
+    "storage_bucket": "rephone-1b3e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563401570087:android:0f322fa1d1e02b4c981b02",
+        "android_client_info": {
+          "package_name": "com.example.rephone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLuHGLeiZOXbz_Xan7AfoOjYxm1X_4XeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,7 @@
 package com.example.rephone.Thread;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -35,7 +37,20 @@ public class DBThread extends Thread {
                 url = new URL(String.format("http://144.24.92.222/rephone/checkOldPhone.jsp?token=%s", parameters[1]));
             } else if (job.equals("check_token_validate")) {
                 url = new URL(String.format("http://144.24.92.222/rephone/checkTokenValidate.jsp?token=%s", parameters[1]));
+            } else if (job.equals("set_function")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/setFunction.jsp?token=%s&motion=%s&sound=%s&running=%s", parameters[1], parameters[2], parameters[3], parameters[4]));
+            } else if (job.equals("set_log")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/setLog.jsp?token=%s&logtype=%s", parameters[1], parameters[2]));
+            } else if (job.equals("set_fcm_token")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/setFCMToken.jsp?token=%s&fcmtoken=%s", parameters[1], parameters[2]));
+            } else if (job.equals("get_log")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/getLog.jsp?token=%s", parameters[1]));
+            } else if (job.equals("get_function")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/getFunction.jsp?token=%s", parameters[1]));
+            } else if (job.equals("reset_app")) {
+                url = new URL(String.format("http://144.24.92.222/rephone/resetApp.jsp?token=%s", parameters[1]));
             }
+
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestProperty("Content-Type", "application/x-www-form-unlencoded");
             conn.setRequestMethod("GET");
@@ -78,5 +93,17 @@ public class DBThread extends Thread {
 
     public boolean checkTokenValidate() {
         return buffer.toString().equals("true");
+    }
+
+    public String[] getLog() {
+        if (buffer == null || buffer.toString().isEmpty())
+            return null;
+        return buffer.toString().split("<br>");
+    }
+
+    public String[] getFunction() {
+        if (buffer == null || buffer.toString().isEmpty())
+            return null;
+        return buffer.toString().split(",");
     }
 }
