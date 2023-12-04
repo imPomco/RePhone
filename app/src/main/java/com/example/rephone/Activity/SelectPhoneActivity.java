@@ -23,8 +23,6 @@ public class SelectPhoneActivity extends AppCompatActivity {
 
         oldPhone = findViewById(R.id.intro_button_old_phone);
         newPhone = findViewById(R.id.intro_button_new_phone);
-        usedBefore = findViewById(R.id.intro_textview_used_before);
-
 
         newPhone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,13 +38,6 @@ public class SelectPhoneActivity extends AppCompatActivity {
             public void onClick(View view) {
                 intent = new Intent(SelectPhoneActivity.this, SelectOldPhoneQRActivity.class);
                 startActivity(intent);
-            }
-        });
-
-        usedBefore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
             }
         });
     }

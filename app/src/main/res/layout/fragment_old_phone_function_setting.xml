@@ -180,7 +180,7 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OLED 디스플레이에서의 효과가 큽니다."/>
+                android:text="OLED 디스플레이의 번인과 전력 소모 감소 효과"/>
         </LinearLayout>
 
 

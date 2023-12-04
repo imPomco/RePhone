@@ -59,15 +59,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/intro_button_new_phone"/>
 
-    <TextView
-        android:id="@+id/intro_textview_used_before"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="이전에 사용하신 적이 있으신가요?"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro_button_new_phone" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

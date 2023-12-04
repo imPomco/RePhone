@@ -61,15 +61,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/select_old_phone_image_qr" />
 
-    <TextView
-        android:id="@+id/select_old_phone_other_method_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="다른 방법으로 페어링 할래요"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/select_old_phone_refresh_button" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
